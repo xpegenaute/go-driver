@@ -50,7 +50,7 @@ func TestReadDocumentWithIfMatch(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Failed to read document: %s", describe(err))
 	}
-	if meta2 != meta {
+	if meta2.Key != meta.Key || meta2.Rev != meta.Rev || meta2.ID != meta.ID {
 		t.Error("Read wrong meta data.")
 	}
 
