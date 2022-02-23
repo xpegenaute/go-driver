@@ -1,4 +1,4 @@
-module github.com/arangodb/go-driver
+module github.com/xpegenaute/go-driver
 
 go 1.16
 
